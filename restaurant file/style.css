@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+
+:root{
+    --black:black;
+   --light-color:#cdaa7c;
+   --box-shadow:8px 24px rgba(0,0,0,0.1);
+}
+
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* navbar style */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+  padding-left: 8px;
+  padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+   
+}
+header .logo img{
+    height:70px;
+   
+}
+
+
+header .navbar a{
+    font-size: 20px;
+    padding: 8px 24px;
+    color: var(--light-color);
+    border: 2px solid transparent;
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    border: 2px solid gray;
+}
+header .icons i{
+    cursor: pointer;
+    margin-left: 8px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: var(--light-color);
+    font-size: 20px;
+    color: #fff;
+}
+header .icon i:hover{
+    color: #fff;
+    background: var(--light-color);
+    transform: rotate(360deg);
+}
+header .icons #menu{
+    display: none;
+}
+/* navbar end */
+
+/* section part */
+#home{
+   
+   padding: 130px;
+    background: url(images/homeimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:700px;
+}
+#headings{
+    font-size: 60px;
+    color: var(--light-color);
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: -522px;
+}
+#sub-heading{
+    color: #fff;
+    padding-top: 30px;
+}
+section p{
+    color: #cdaa7c;
+}
+.button{
+    background-color: var(--light-color);
+    border: 2px solid white;
+    font-size: 20px;
+     margin-left: 25px;
+     margin-top: 2000px;
+     padding: 5px;
+
+}
+.button:hover{
+    background-color: #fff;
+    border: 2px solid var(--light-color);
+    color: black;
+}
+
+/* welcome section */
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 32px;
+    padding-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 50px;
+}
+.sub-heading{
+    text-align: center;
+    color:var(--light-color) ;
+    font-size:25px;
+    padding: 8px 32px;
+    margin-bottom: 64px;
+    background: var(--black);
+}
+.welcome .box-container{
+    display: flex;
+    gap: 24px;
+}
+.welcome .box-container .box{
+    width: 33%;
+    background: var(--black);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding-bottom: 1%;
+}
+.welcome .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.welcome .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.welcome .box-container .box .image img:hover{
+    transform: scale(1.1);
+}
+.welcome .box-container .box .content{
+    padding: 2rem;
+    padding-top: 2rem;
+}
+.welcome .box-container .box .content h3{
+    color: var(--light-color);
+    font-size:20px;
+    font-weight: 400;
+}
+.welcome .box-container .box .content p{
+    font-size: 10px;
+    color: #fff;
+
+}
+
+/*reservation section */
+.reservation{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+
+.reservation .image{
+    width: 55%;
+    background: url(images/table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 9rem;
+}
+
+.reservation .form{
+    background: #181818;
+    width: 45%;
+    padding:9rem;
+
+}
+.reservation .form h1{
+    color: #fff;
+}
+
+.reservation .form-holder{
+    display: flex;
+    grid-gap:3rem;
+    width: 100%;
+
+}
+.reservation .form form input,
+.reservation .form form select
+{
+display: block;
+margin: 2rem 0;
+width: 100%;
+background: none;
+border-bottom: .1rem solid #b7b3b3;
+color: #b7b3b3;
+}
+
+.reservation .form form input::placeholder{
+    color: #b7b3b3;
+}
+
+/* footer style */
+
+footer{
+   
+ 
+    width: 100%;
+    background: #333;
+    color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+footer .container{
+    width: 1200px;
+    margin: auto;
+  
+}
+.footer-wrapper{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-col{
+    padding-right: 55px;
+}
+.footer-col a{
+    padding: 0 2px;
+    color: #fff;
+}
+.footer-col a i{
+    height: 40px;
+    width: 40px;
+    background: #181818;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer-col .group-head{
+    font-weight: 900;
+    text-transform: none;
+    font-size: 1rem;
+    letter-spacing: -.48px;
+    line-height: 1.5;
+    padding-top: 8px;
+   padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #cdaa7c;
+
+}
+.footer-col .group-element{
+    display: grid;
+    grid-template: 1fr;
+ 
+    padding-top: 12px;
+}
+.footer-col .group-element .element-name{
+    font-weight: 500;
+    text-transform: none;
+    font-size: .875rem;
+    letter-spacing: -.07px;
+    line-height: 1.4285714286;
+    padding: 8px 4px 8px 4px;
+    
+    cursor: pointer;
+}
+.footer-col .group-element .element-name:hover{
+    color: var(--light-color);
+ 
+}
+
+
+#copyright{
+    padding: 1rem 0;
+}
+#copyright .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.copyright-text{
+    font-size: 16px;
+    text-align: left;
+    color: rgb(34, 34, 34);
+}
+
+
+
+
+
+
+
